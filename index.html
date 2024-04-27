@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/OrbitControls.js"></script>
+    <!-- // JavaScript code
+// Assume you have your sales data in an array
+const salesData = [/* Your sales data */];-->
+
+
+</head>
+
+<style>
+
+body{
+    background-color: white;
+   padding: 100vh;
+   margin: 140vw;
+  
+}
+header{
+    padding: 0;
+    margin: 0;
+}
+    .vertical-navbar {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    background-color: #d3e2f1;
+    padding-top: 20px;
+    height: 108vh;
+    width: 20vw;
+}
+  
+    .vertical-navbar-brand {
+      color: rgb(14, 13, 13); /* White text color */
+      font-size: 24px;
+      font-weight: bolder;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .vertical-navbar-nav {
+    font-weight: bold;
+    color: rgb(13, 7, 7);
+        background-color: #dce4ed;
+      padding-left: 0;
+    }
+  
+    .vertical-navbar-nav li {
+      margin-bottom: 5px; /* Add some space between each button */
+    }
+  
+    .vertical-navbar-nav button,
+    .vertical-navbar-nav a {
+      width: 100%;
+      padding: 10px;
+      text-align: left;
+      background-color: transparent;
+      color: #605d5d; /* White text color */
+      font-weight: bold;
+      border: none;
+      border-radius: 0;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+  
+    .vertical-navbar-nav button:hover,
+    .vertical-navbar-nav a:hover {
+        color:#0d74d4;
+      background-color: #7aa2c7; /* Darker background color on hover */
+    }
+    body {
+        background-color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+    left: 150px;
+    position: relative;
+    width: 280px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    flex-wrap: wrap;
+    size: 10px;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    align-items: stretch;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    justify-content: right;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card .value {
+  font-size: 24px;
+  font-weight: bold;
+}
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Main content styles */
+    
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+.container-fluid img {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+   
+    align-content: stretch;
+    justify-content: space-around;
+}
+
+.container-box img {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+    align-content: stretch;
+    justify-content: space-around;
+}
+  </style>
+  
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img width=33 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTBXu7yvTsWs74DUfwGS1e6rxQ6fHc_g1kA&s" alt="">olivia Miller</a>
+                 <form class="form-inline my-2 my-lg-0 mr-auto">
+                   <button class="form-control mr-sm-2" type="search" placeholder=" Search dashboard"><i class="fas fa-search"></i>search dashboard</button>
+                    <!-- <button class="btn btn-outline-primary mr-2"type="submit"></button> -->
+                <button class="btn btn-outline-primary mr-2">Switch Company</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary mr-2"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Oliver Miller <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary mr-2"><img width="33" src="https://cdn-icons-png.flaticon.com/512/2919/2919906.png" alt=""> welcome back, user</button>
+            </div>
+        </div>
+        </form>
+    </header>
+                
+                    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <div class="dropdown mr-2">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Revival <i class="fas fa-caret-down"></i>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Option 1</a>
+                            <a class="dropdown-item" href="#">Option 2</a>
+            
+                <button class="btn btn-outline-primary mr-2"><i class="fas fa-arrow-left"></i> Return</button>
+                <button class="btn btn-outline-primary mr-2"><i class="fas fa-user"></i> Customers</button>
+                <button class="btn btn-outline-primary mr-2"><i class="fas fa-money-bill"></i> Payable </button>
+                <button class="btn btn-outline-primary mr-2"> <i class="fas fa-dollar-sign"></i> Sales </button>
+                <button class="btn btn-outline-primary mr-2"><i class="fas fa-bars"></i> Inventory </button>
+                <button class="btn btn-outline-primary mr-2"> <i class="fas fa-arrow-down"></i> Import</button>
+                <button class="btn btn-outline-primary mr-2"> <i class="fas fa-map-marker-alt"></i>Showrooms</i></button>
+            </div>
+            </div>
+            </div>
+            
+            <div class="container">
+            <div class="sidebar">
+                <!-- Your vertical navbar content goes here -->
+              </div>
+              <div class="main-content">
+                <div class="container">
+                  <div class="card">
+                    <span data-purecounter-start="0" data-purecounter-ends="10,000" data-purecounter-duration="1s" class="purecounter"></span>
+                    <h2>Total Revenue</h2>
+                    <p class="value">$10,000</p>
+                    <img width="83" src="https://png.pngtree.com/png-clipart/20211024/original/pngtree-dollar-logo-png-image_6868846.png" alt="">
+                  </div>
+                  <div class="card">
+                    
+                    <h2>Total Expenses</h2>
+                    <p class="value">$5,000</p>
+                    <img width="50" src=" https://cdn-icons-png.flaticon.com/512/2223/2223606.png" alt=""> 
+                  </div>
+                  <div class="card">
+                    <h2>Accounts Receivable</h2>
+                    <p class="value">$3,000</p>
+                    <img width="53" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-4jCrIj_pOoupBTQjIVwdmn8PJRhJVn2zDSPItuusA&s" alt="">
+                  </div>
+                  <div class="card">
+                    <h2>Accounts Payable</h2>
+                    <p class="value">$2,000</p>
+                    <img width="53" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXVC3uDIVjpSCdgAsOyvO7sXJlVS22P8AJ-onsxCWPlA&s" alt="">
+                  </div>
+                  <div class="card">
+                    <h2>Items Missing Images</h2>
+                    <p class="value">10</p>
+                    <img width="53" src="https://png.pngtree.com/png-vector/20190508/ourmid/pngtree-gallery-vector-icon-png-image_1028015.jpg" alt="">
+                  </div>
+                  <div class="card">
+                    <h2>Booked</h2>
+                    <p class="value">50</p>
+                    <img width="85" src="https://media.istockphoto.com/id/863958484/vector/book-icon.jpg?s=612x612&w=0&k=20&c=LTS6ZK5BwnXAqNVPzJeGwxi_tz-LPgxR0qpZH6Y_B_c=" alt="">
+                  </div>
+                </div>
+              </div>
+            <nav class="vertical-navbar">
+                <span class="vertical-navbar-brand"><img width="75" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW3Am6sedjpk-9KFsUnnG9MSqZ5UQMhXBp6g&s" alt=""> REPORT</span>
+                <ul class="vertical-navbar-nav">
+                  <li><button>Company Snapshot</button></li>
+                  <li><button>Open Order Report</button></li>
+                  <li><button>Cut and Sold Lookup</button></li>
+                  <li><button>Inventory Snapshot</button></li>
+                  <li><button>Balance to Sell Sales Summary</button></li>
+                  <li><button>Open Order to Pick</button></li>
+                  <li><button>Period Comparison Report</button></li>
+                  <li><button>SR Availability</button></li>
+                  <li><button>Sales Forecast Report</button></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="invoices">
+                      
+                        <table class="table">
+                            <img width="500" src="https://assets.techrepublic.com/uploads/2022/03/ExcelPTYTY_A-770x467.jpg
+                            " alt="">
+                           </div>
+                           </div>
+                    
+        </div>
+        </div>
+        <div class="container-box">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sales-forecast">
+                       
+                        <img width="500" src="https://media.licdn.com/dms/image/D5612AQHlFGdO8BIKew/article-inline_image-shrink_1500_2232/0/1702596771078?e=1719446400&v=beta&t=SxCYB-W7bsySmG0ywA7Kkh5z2yxesZWHAdIIe4yO2Hc" alt="">
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+              
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    
+    
+    </html>
+</body>
