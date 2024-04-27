@@ -1,0 +1,118 @@
+
+/* Custom CSS */
+
+/* Header styles */
+
+.container{
+    padding: 20px;
+    margin: 20px;
+    left: 20px;
+    top: 0;
+}
+.navbar-brand img { 
+    margin-right:10px;
+
+}
+.container-options{
+    display: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Container styles */
+.container-options {
+    display: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+   
+}
+
+.container-options .btn-block {
+  
+    top: 10px;
+    text-align: left;
+}
+
+.container-options .dropdown-toggle::after {
+    
+    display: none;
+}
+
+.container-options .dropdown-menu {
+    margin-left: 10px;
+    min-width: 150px;
+}
+.container-options .search-dashboard{
+    margin-left: 25px;
+    background: aqua;
+    color: #f8f9fa;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+.btn-toolbar {
+    display: -ms-flexbox;
+    display: inline;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+
+/* Button styles */
+.btn-option {
+    display: inline;
+    border-radius: 0;
+}
+
+.btn-option i {
+    margin-right: 5px;
+}
+/**counts**/
+/* .counts{
+    position:relative;
+    padding-bottom: 30px ;
+}
+.counts .count-box {
+    position: relative;
+box-shadow: -10px -5px 40px 0 solid rgb(44, 42, 42);
+padding: 30px;
+width: 100%;
+}
+.counts .count-box i{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: rgb(82, 82, 227);
+    float: right;
+}
+.counts .count-box p{
+    padding: 30px 0 0;
+    margin: 0;
+    font-size:14px;
+
+} */
+/* Style for the container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Style for each individual container */
+  .box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* 25% width with gap of 20px */
+  }
+  
+
